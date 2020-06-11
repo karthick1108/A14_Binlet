@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello There!"
+        android:textColor="@color/colorGrey"
+        android:textSize="30sp"
+        android:id="@+id/welcome"
+        android:fontFamily="@font/bold"
+        android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your username"
+            android:fontFamily="@font/regular"
+            android:textSize="20sp"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:fontFamily="@font/regular"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <Button
+        android:id="@+id/b_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:fontFamily="@font/regular"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/b_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:fontFamily="@font/regular"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/game"
+        android:title="Game"
+        android:fontFamily="@font/regular"
+        android:icon="@drawable/game"/>
+    <item
+        android:id="@+id/quiz"
+        android:title="Quiz"
+        android:fontFamily="@font/regular"
+        android:icon="@drawable/quiz"/>
+    <item
+        android:id="@+id/leaderboard"
+        android:title="Leaderboard"
+        android:fontFamily="@font/regular"
+        android:icon="@drawable/leaderboard"/>
+
+    <item
+        android:id="@+id/home"
+        android:title="Information"
+        android:fontFamily="@font/regular"
+        android:icon="@drawable/ic_info"/>
+
+    <item
+        android:id="@+id/account"
+        android:title="Account"
+        android:fontFamily="@font/regular"
+        android:icon="@drawable/ic_account"/>
+
+</menu>

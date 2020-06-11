@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gloriousfour.binlet"
+    tools:ignore="LockedOrientationActivity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_app_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.gloriousfour.binlet.GuestStartGameActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.gloriousfour.binlet.ShowInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.GuestShowInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.LandingScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.SelectQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.GuestQuestionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.GuestResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.StartGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.GuestWelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.GuestQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.GuestGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.LeaderboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.QuestionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.QuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.GameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gloriousfour.binlet.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

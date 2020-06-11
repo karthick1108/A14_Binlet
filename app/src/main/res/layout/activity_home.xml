@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="02:00" />
+
+    <TextView
+        android:id="@+id/itemsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/regular"
+        android:text="Items: "
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/correctImage1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="48dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/glassBin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838"
+        app:srcCompat="@drawable/correct" />
+
+    <ImageView
+        android:id="@+id/correctImage2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="56dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/correctImage1"
+        app:layout_constraintTop_toTopOf="@+id/correctImage1"
+        app:srcCompat="@drawable/correct" />
+
+    <ImageView
+        android:id="@+id/correctImage3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="76dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/correctImage2"
+        app:layout_constraintTop_toTopOf="@+id/correctImage2"
+        app:srcCompat="@drawable/correct" />
+
+    <ImageView
+        android:id="@+id/correctImage4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="64dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/correctImage3"
+        app:layout_constraintTop_toTopOf="@+id/correctImage3"
+        app:srcCompat="@drawable/correct" />
+
+
+    <ImageView
+        android:id="@+id/wrongImage1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="48dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/glassBin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838"
+        app:srcCompat="@drawable/wrong" />
+
+
+    <ImageView
+        android:id="@+id/wrongImage2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="56dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/wrongImage1"
+        app:layout_constraintTop_toTopOf="@+id/wrongImage1"
+        app:srcCompat="@drawable/wrong" />
+
+    <ImageView
+        android:id="@+id/wrongImage3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="76dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/wrongImage2"
+        app:layout_constraintTop_toTopOf="@+id/wrongImage2"
+        app:srcCompat="@drawable/wrong" />
+
+    <ImageView
+        android:id="@+id/wrongImage4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="64dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/wrongImage3"
+        app:layout_constraintTop_toTopOf="@+id/wrongImage3"
+        app:srcCompat="@drawable/wrong" />
+
+    <ImageView
+        android:id="@+id/glassBin"
+        android:layout_width="82dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/timer"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="Glass Bin"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/glass" />
+
+    <ImageView
+        android:id="@+id/plasticBin"
+        android:layout_width="82dp"
+        android:layout_height="78dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/glassBin"
+        app:layout_constraintTop_toTopOf="@+id/glassBin"
+        app:srcCompat="@drawable/plastic" />
+
+    <ImageView
+        android:id="@+id/paperBin"
+        android:layout_width="82dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/plasticBin"
+        app:layout_constraintTop_toTopOf="@+id/plasticBin"
+        app:srcCompat="@drawable/paper" />
+
+
+    <ImageView
+        android:id="@+id/organicBin"
+        android:layout_width="88dp"
+        android:layout_height="78dp"
+        app:layout_constraintStart_toEndOf="@+id/paperBin"
+        app:layout_constraintTop_toTopOf="@+id/paperBin"
+        app:srcCompat="@drawable/organic" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score : 0"
+        android:textSize="30sp"
+        android:fontFamily="@font/regular"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/garbageImage"
+        app:layout_constraintVertical_bias="0.156" />
+    <ImageView
+        android:id="@+id/garbageImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plasticBin"
+        app:srcCompat="@drawable/apple" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorAccent"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

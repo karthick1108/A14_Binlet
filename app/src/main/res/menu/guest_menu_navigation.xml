@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/guestgame"
+        android:title="Game"
+        android:fontFamily="@font/regular"
+        android:icon="@drawable/game"/>
+    <item
+        android:id="@+id/guestquiz"
+        android:title="Quiz"
+        android:fontFamily="@font/regular"
+        android:icon="@drawable/quiz"/>
+    <item
+        android:id="@+id/guesthome"
+        android:title="Information"
+        android:fontFamily="@font/regular"
+        android:icon="@drawable/ic_info"/>
+</menu>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">B!NLET</string>
+    <string name="home_recycle_dialog">Convert the waste materials into new materials and objects.
+        \nYou need to carefully sort your waste in order to recycle them properly.</string>
+    <string name="home_reuse_dialog">It is the practice of using an item whether in its original form or to fulfil different function.</string>
+    <string name="home_reduce_dialog">To generate less waste as much as possible. \nBefore you purchase something, consider whether you really need it</string>
+</resources>
